@@ -12,3 +12,28 @@
   color: var(--branco);
 
 }
+.conteudoprincipal{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   max-width: 1200px;
+   width: 100%;
+
+
+}
+.tituloprincipal{
+  text-align: center;
+  width: 100%;
+  font-size: 32px;
+}
+.botao{
+ background-color: var(--botao-inativo);
+ color: #FFFFFF;
+ display: flex;
+ font-size: 18px;
+ width: 100%;
+ align-items: center;
+ justify-content: center;
+ padding: 1em;
+}
