@@ -23,17 +23,13 @@ span{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    /* define uma margem de 0 para cima e para baixo
-    e automática para os lados */
+
 }
 
 .titulo-principal{
     text-align: center;
     width: 100%;
     font-size: 32px;
-}
-.botoes{
- display: block;  
 }
 
 .botao{
@@ -53,16 +49,34 @@ span{
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
 }
+.botoes{
+ display: block;   
+}
 .botao:first-child{
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 20px 20px 0 0;
 }
 
 .botao:last-child{
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 0px 20px 20px;
+}
+.botao.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 2px solid var(--verde) ;
+}
+.aba-conteudo{
+    display: none;
+}
+.aba-conteudo.ativo{
+    display: block;
 }
 @media screen and (min-width: 700px){
     .botoes{
         display: flex;
     }
-    
+    .botao:first-child{
+        border-radius: 20px 0 0 20px;
+    }
+    .botao:last-child{
+        border-radius: 0 20px 20px 0;
+    }
 }
